@@ -1,0 +1,3 @@
+[mcp_servers.open-design]
+command = "npx"
+args = ["-y", "@feimacode/open-design-agent-kit-mcp@0.4.0"]

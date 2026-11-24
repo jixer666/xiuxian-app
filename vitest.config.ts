@@ -1,0 +1,8 @@
+import path from 'node:path'
+import process from 'node:process'
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+  test: { environment: 'node', globals: true, include: ['src/**/*.test.ts'] },
+  resolve: { alias: { '@': path.resolve(process.cwd(), 'src') } },
+})
